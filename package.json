@@ -1,0 +1,18 @@
+{
+  "name": "marketx-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "babel --presets react src --watch --out-dir build",
+    "build": "babel --presets react src --out-dir build"
+  },
+  "author": "Harry Sadler",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.17",
+    "babel-preset-react": "^6.3.13",
+    "bootstrap": "^3.3.6"
+  }
+}

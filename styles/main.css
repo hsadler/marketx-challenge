@@ -1,0 +1,154 @@
+/*MAIN CSS*/
+
+/*for testing*/
+* {
+  /*border: 1px dotted red;*/
+}
+
+
+/*app styles*/
+.app-container {
+  margin-top: 150px;
+}
+hr {
+  border-top-color: #979797;
+  margin: 2px 0 25px 0;
+}
+p.blurb {
+  font-size: 16px;
+  margin-bottom: 30px
+}
+a.content-block-link {
+  color: black;
+  text-decoration: underline;
+}
+
+
+/*navigation styles*/
+.navbar {
+  background-color: #00062B;
+  padding: 22px 0;
+}
+.navbar a, .navbar a:hover, .navbar a:focus {
+  background-color: #00062B !important;
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-left: 18px;
+  letter-spacing: 1px;
+}
+.navbar a.nav-highlight {
+  color: #958726 !important;
+}
+.navbar-brand-img {
+  position: relative;
+  top: -18px;
+  left: -15px;
+}
+
+
+/*planatirMain styles*/
+.planatir-main-big-x {
+  margin-bottom: 36px;
+}
+.big-x-image {
+  position: relative;
+  top: -14px;
+  left: 5px;
+}
+
+/*table styles*/
+.table th, .table td {
+  border: none !important;
+}
+.table th {
+  background-color: #BCBCBC;
+  color: white;
+}
+
+
+/*content group styles*/
+h1.content-group-header {
+  position: relative;
+  left: 24px;
+  margin-bottom: 0;
+  font-size: 30px;
+  letter-spacing: 2.4px;
+  color: #C6C6C6;
+  font-weight: 100;
+  font-variant: normal;
+}
+.about-content-container {
+  margin-bottom: 100px;
+}
+
+
+/*content block styles*/
+.content-block-container {
+  min-height: 105px;
+}
+.content-block-header {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 19px;
+  letter-spacing: .3px;
+  margin-top: 0;
+}
+.content-block-lead {
+  font-size: 30px;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-variant: normal;
+}
+.content-block-text {
+  font-size: 16px;
+}
+.recent-press-block-item {
+  padding-bottom: 155px;
+}
+
+
+/*button group styles*/
+div.button-group-container {
+  margin: 100px 0;
+}
+a.info-button, a.info-button:hover, a.info-button:focus {
+  color: #FFFFFF;
+  width: 360px;
+  height: 96px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+
+/*footer styles*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+.app-container {
+  /* Margin bottom by footer height */
+  margin-bottom: 500px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /*height: 200px;*/
+  background-color: #00062B;
+}
+.footer-content {
+  padding: 20px 0 50px 0;
+}
+.footer-text {
+  margin: 10px 0 15px 0;
+  color: #7A7A7E;
+}
+.footer-text-sm {
+  font-size: 12px;
+}
+
+
+
