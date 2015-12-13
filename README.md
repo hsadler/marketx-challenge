@@ -17,7 +17,5 @@ npm install
 npm run build
 ```
 
-```sh
-npm run build
-```
+open the index.html in a browser
 
