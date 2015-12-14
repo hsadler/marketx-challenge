@@ -16,11 +16,18 @@ hr {
 }
 p.blurb {
   font-size: 16px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  line-height: 25px;
 }
 a.content-block-link {
   color: black;
   text-decoration: underline;
+}
+.lead-text {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+  font-variant: normal;
 }
 
 
@@ -31,7 +38,7 @@ a.content-block-link {
 }
 .navbar a, .navbar a:hover, .navbar a:focus {
   background-color: #00062B !important;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-size: 13px;
   margin-left: 18px;
   letter-spacing: 1px;
@@ -48,21 +55,79 @@ a.content-block-link {
 
 /*planatirMain styles*/
 .planatir-main-big-x {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 .big-x-image {
   position: relative;
   top: -14px;
   left: 5px;
 }
+.big-x-image:hover {
+  cursor: pointer;
+}
+.palantir-main-stack1 {
+  margin-bottom: 70px;
+}
+
+
+/*data list styles*/
+.data-list-block {
+  margin-bottom: 30px;
+}
+.data-list-header {
+  background-color: #BCBCBC;
+  color: white;
+  line-height: 36px;
+  vertical-align: middle;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.data-list-item {
+  margin-top: 12px;
+  font-size: 15px;
+}
+.data-lead-text {
+  height: 90px;
+  line-height: 100px;
+}
+/*for left style*/
+.data-list-header-left, .data-list-item-left {
+  position: relative;
+  left: 70px;
+}
+
 
 /*table styles*/
 .table th, .table td {
   border: none !important;
 }
+.table td {
+  height: 50px !important;
+}
 .table th {
   background-color: #BCBCBC;
   color: white;
+  height: 60px;
+}
+.table-header-text {
+  position: relative;
+  top: 12px;
+}
+.table-data-text {
+  position: relative;
+  top: 10px;
+  font-size: 15px;
+}
+.table-data-stripe {
+  background-color: #F2F2F6;
+}
+.table-up-arrow {
+  position: relative;
+  top: -10px;
+  left: 15px;
+  height: 17px;
+  width: 17px;
 }
 
 
@@ -77,7 +142,7 @@ h1.content-group-header {
   font-weight: 100;
   font-variant: normal;
 }
-.about-content-container {
+.about-content-container, .list-content-container {
   margin-bottom: 100px;
 }
 
@@ -127,17 +192,9 @@ html {
   position: relative;
   min-height: 100%;
 }
-.app-container {
-  /* Margin bottom by footer height */
-  margin-bottom: 500px;
-}
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  /*height: 200px;*/
   background-color: #00062B;
+  margin-top: 100px;
 }
 .footer-content {
   padding: 20px 0 50px 0;
@@ -148,7 +205,15 @@ html {
 }
 .footer-text-sm {
   font-size: 12px;
+  line-height: 19px;
 }
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 
 
-// For this coding challenge, I've decided to store the app's data in this global object
-// normally this information would be retrieved from the server and put into a Flux store
+// For this coding challenge, I've decided to store the app's data in this global object.
+// Normally this information would be retrieved from the server and held a Flux store
 // or similar...
 
 
@@ -34,11 +34,40 @@ var appData = {
   palantirMain: {
     image: 'assets/Palantir.png',
     blurb: 'The company raised $554.83 million of Series K venture funding from undisclosed investors as of October 21, 2015, putting the company’s pre-money valuation at $19.65 billion. Nima Capital and Aeon Funds also participated.',
-    industries: [],
-    notableInvestors: [],
+
+    contentBlocks: [
+      {
+        header: 'Industries',
+        collection: ['Database Software', 'Big Data', 'SaaS'],
+        isLead: false
+      },
+      {
+        header: 'Notable Investors',
+        collection: ['137 Ventures', 'ARTIS Ventures', 'Benjamin Ling'],
+        isLead: false
+      },
+      {
+        header: 'Valuation',
+        collection: ['$19.65B'],
+        isLead: true
+      },
+      {
+        header: 'Total Funding',
+        collection: ['$200M'],
+        isLead: true
+      },
+      {
+        header: 'Year Funded',
+        collection: ['2004'],
+        isLead: true
+      }
+    ],
+
+    industries: ['Database Software', 'Big Data', 'SaaS'],
+    notableInvestors: ['137 Ventures', 'ARTIS Ventures', 'Benjamin Ling'],
     valuation: '$19.65B',
     totalFunding: '$200M',
-    YearFounded: '2004'
+    yearFounded: '2004'
   },
 
   palantirAbout: {
@@ -83,6 +112,34 @@ var appData = {
     ]
   },
 
+  palantirLists: {
+    header: 'LISTS',
+    contentBlocks: [
+      {
+        header: 'People',
+        collection: ['Alexander Karp Ph.D', 'Joe Lonsdale', 'Stephen Cohen', 'Geoff Belknap Ph.D', 'Y.Dan Rubinstein Ph.D']
+      },
+      {
+        header: 'Investors',
+        collection: ['Aeon Funds', 'Dover Madison Capital Management', 'Nima Capital', 'GSV Ventures', 'MicroVenture Marketplace']
+      },
+      {
+        header: 'Acquisitions',
+        collection: ['FT Technologies', 'Propeller', 'Poptip', 'ARTIS Ventures', 'Voicegem']
+      }
+    ]
+  },
+
+  palantirFundingHistory: {
+    header: 'FUNDING HISTORY',
+    tableHeaders: ['Title', 'Series', 'Funding', 'Announced On'],
+    tableBlocks: [
+      ['Later Stage VC', 'K', '$554.83M', '23-Jul-2015'],
+      ['Later Stage VC', 'J', '$400.00M', '26-Nov-2014'],
+      ['Later Stage VC', 'I', '$635.71M', '03-Nov-2014'],
+    ]
+  },
+
   palantirRecentPress: {
     header: 'RECENT PRESS',
     contentBlocks: [
@@ -108,6 +165,12 @@ var appData = {
         blurb: 'Palantir Technologies is reportedly looking to raise $500 million in funding that will give it a valuation of around $20 billion. The company, which received a $15 billion valuation in its most recent raise in November, is a Big Data startup developing solutions for government agencies, commercial enterprises and non-profit organizations, among other entities.'
       }
     ]
+  },
+
+  footer: {
+    image: 'assets/market-x-large.png',
+    copyrightText: '© 2015 MarketX Inc. All Rights Reserved.',
+    fineprint: 'This site is operated by MarketX Inc. MarketX does not give investment, legal or tax advice. All securities listed herein are offered through North Capital Private Securities Corporation ("NCPS"), a registered broker-dealer, member FINRA/SIPC. MarketX has taken no steps to verify the adequacy, accuracy, or completeness of any information presented herein. By accessing this site and any pages thereof, you agree to be bound by the Terms of Use and Privacy Policy. Only Accredited Investors can invest in securities offerings posted on this website. All accredited investors using the MarketX platform must be verified as to their accredited status and must acknowledge and accept the high risks associated with investing in privately held companies and early-stage ventures. These risks include holding an investment for periods of many months or years with limited ability to resell, and the risk of losing your entire investment. You must have the ability to bear those risks. To the fullest extent permissible by law, neither MarketX nor any of its directors, officers, employees, representatives, affiliates or agents shall have any liability whatsoever arising out of any error or incompleteness of fact or opinion in the presentation or publication of the materials and communication herein.'
   }
 
 };

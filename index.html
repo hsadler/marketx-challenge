@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Market X</title>
@@ -10,42 +11,26 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Oswald Font -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <!-- Roboto Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
     <!-- custom css -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
+
   <body>
-
     <!-- APP -->
-    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-      <div id="marketx-app"></div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-content col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-
-        <div class="text-center">
-          <img src="assets/market-x-large.png">
-          <p class="footer-text">
-            &copy; 2015 MarketX Inc. All Rights Reserved.
-          </p>
-        </div>
-        <div>
-          <p class="footer-text footer-text-sm">
-            This site is operated by MarketX Inc. MarketX does not give investment, legal or tax advice. All securities listed herein are offered through North Capital Private Securities Corporation ("NCPS"), a registered broker-dealer, member FINRA/SIPC. MarketX has taken no steps to verify the adequacy, accuracy, or completeness of any information presented herein. By accessing this site and any pages thereof, you agree to be bound by the Terms of Use and Privacy Policy. Only Accredited Investors can invest in securities offerings posted on this website. All accredited investors using the MarketX platform must be verified as to their accredited status and must acknowledge and accept the high risks associated with investing in privately held companies and early-stage ventures. These risks include holding an investment for periods of many months or years with limited ability to resell, and the risk of losing your entire investment. You must have the ability to bear those risks. To the fullest extent permissible by law, neither MarketX nor any of its directors, officers, employees, representatives, affiliates or agents shall have any liability whatsoever arising out of any error or incompleteness of fact or opinion in the presentation or publication of the materials and communication herein.
-          </p>
-        </div>
-
-      </div>
-    </footer>
+    <div id="marketx-app"></div>
 
     <!-- React -->
     <script src="node_modules/react/dist/react.js"></script>
     <script src="node_modules/react-dom/dist/react-dom.js"></script>
-    <!-- our app data from the store -->
+    <!-- our store for the app data -->
     <script src="stores/appData.js"></script>
     <!-- components -->
     <script src="build/shared-components.js"></script>
     <script src="build/marketx.js"></script>
   </body>
+
 </html>
